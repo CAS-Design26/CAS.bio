@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cristian Aguilar Sumano | Mechatronics Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#0d0df2",
+                "background-light": "#f5f5f8",
+                "background-dark": "#101022",
+                "slate-custom": "#475569",
+                "charcoal-custom": "#1e293b",
+              },
+              fontFamily: {
+                "display": ["Inter", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .tech-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(13, 13, 242, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        .grid-pattern {
+            background-image: radial-gradient(#0d0df2 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-background-light dark:bg-background-dark text-charcoal-custom selection:bg-primary/20">
+        <!-- Navigation -->
+        <div class="fixed top-0 inset-x-0 z-50 w-full bg-white/80 shadow dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white">
+                        <span class="material-symbols-outlined text-2xl">precision_manufacturing</span>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-charcoal-custom dark:text-white">Cristian A.</span>
+                </div>
+                <div class="flex items-center gap-12">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#resume">Resumen</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#about">Acerca de</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#life">Vida Escolar</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#bio">Biografía</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#formacion">Formacion</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#gallery">Galeria</a>
+
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#video-showcase">Videos</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#musica">Música</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+            <div class="absolute inset-0 grid-pattern pointer-events-none"></div>
+            <div class="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+            <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative">
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-bold uppercase tracking-widest">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                        </span>
+                        Act. 3: Pagina Web con Joomla y Xampp
+                    </div>
+                    <h1 class="text-6xl md:text-8xl font-black text-charcoal-custom dark:text-white leading-tight">
+                        Cristian<br/>
+                        <span class="text-primary">Aguilar Sumano</span>
+                    </h1>
+                    <p class="text-xl text-slate-custom dark:text-gray-400 max-w-lg leading-relaxed">
+                        Estudiante de Ingeniería Electrónica en el Instituto Tecnológico de Oaxaca (ITO).
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <button class="px-8 py-4 bg-primary text-white font-bold rounded-xl flex items-center gap-2 hover:scale-105 transition-transform">
+                            <a class="" href="#bio">Biografía</a>
+                        </button>
+                        <button class="px-8 py-4 bg-white dark:bg-slate-800 text-charcoal-custom dark:text-white border border-slate-200 dark:border-slate-700 font-bold rounded-xl hover:bg-slate-50 transition-colors">
+                            <a class="" href="#about">Acerca de</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square bg-slate-100 dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-2xl">
+                        <img class="w-full h-full object-cover opacity-90 mix-blend-multiply dark:mix-blend-normal" data-alt="Image Principal" src="https://lh3.googleusercontent.com/pw/AP1GczPQuB4L_RZnBDCX5DUddxqHBBfc49mb22zwufXqdolp1nqzhaL4VxZOkNCgjafcfu0NcIdhohVjsUvF7k1ba480NqLEUZLKBRp7ACzUkjA-V3Kn7g=w2400"/>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700">
+                        <div class="flex items-center gap-4">
+                            <div class="text-4xl font-black text-primary">+1</div>
+                            <div class="text-sm font-bold text-slate-custom uppercase tracking-wider">Juego en mi propia liga.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Resumen Me Section -->
+        <section class="py-24 bg-white dark:bg-background-dark" id="resume">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                    <div class="lg:col-span-1">
+                        <h2 class="text-3xl font-black text-charcoal-custom dark:text-white mb-6 flex items-center gap-3">
+                            <span class="w-12 h-1 bg-primary rounded-full"></span>
+                            Resumen
+                        </h2>
+                        <p class="text-slate-custom dark:text-gray-400 font-medium">Disfruto mucho mi Carrera Ingeniería Electrónica</p>
+                    </div>
+                    <div class="lg:col-span-2 space-y-6">
+                        <p class="text-xl text-slate-custom dark:text-gray-300 leading-relaxed">Mi vida escolar ha sido una etapa clave en mi crecimiento personal y académico.<br>
+Desde pequeño aprendí el valor de la disciplina, la constancia y la responsabilidad.
+<br>
+<br>
+Con el tiempo descubrí mi interés por la tecnología, lo que me llevó a estudiar Ingeniería Electrónica.
+Durante este proceso desarrollé habilidades como el pensamiento crítico y la resolución de problemas.
+Cada experiencia escolar me ha preparado para enfrentar nuevos retos y construir mi futuro profesional.
+                        </p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8 border-t border-slate-100 dark:border-slate-800">
+                            <div>
+                                <div class="text-sm text-slate-400 uppercase font-bold mb-1">Estudio</div>
+                                <div class="font-bold">Ing. Electrónica</div>
+                            </div>
+                            <div>
+                                <div class="text-sm text-slate-400 uppercase font-bold mb-1">Estatura</div>
+                                <div class="font-bold">1.80 M</div>
+                            </div>
+                            <div>
+                                <div class="text-sm text-slate-400 uppercase font-bold mb-1">Cumpleaños</div>
+                                <div class="font-bold">20 de Oct.</div>
+                            </div>
+                            <div>
+                                <div class="text-sm text-slate-400 uppercase font-bold mb-1">Lugar de Nacimiento</div>
+                                <div class="font-bold" data-location="Mexico City">Ocotlan de Morelos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Acerca de -->
+        <section class="py-24 bg-background-light dark:bg-slate-900/50" id="about">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-black text-charcoal-custom dark:text-white mb-4">Acerca de...</h2>
+                    <div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Hobbies-->
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl">book</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Hobbies</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2 text-slate-custom dark:text-gray-300">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                Me gusta el Basquet
+                            </li>
+                            <li class="flex items-center gap-2 text-slate-custom dark:text-gray-300">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                El senderismo
+                            </li>
+                            <li class="flex items-center gap-2 text-slate-custom dark:text-gray-300">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                Apreciar la naturaleza
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Me gusta -->
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl">light</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Me gusta</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2 text-slate-custom dark:text-gray-300">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                Me  gustan mucho las apuestas
+                            </li>
+                            <li class="flex items-center gap-2 text-slate-custom dark:text-gray-300">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                los juegos de azar o barajas
+                            </li>
+                            <li class="flex items-center gap-2 text-slate-custom dark:text-gray-300">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                Disfruto salir a rodar
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Familia -->
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl">person</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Familia </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2 text-slate-custom dark:text-gray-300">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                Tengo un hermano, que maneja Moto.
+                            </li>
+                            <li class="flex items-center gap-2 text-slate-custom dark:text-gray-300">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                Tengo vivos a mis dos padres, mamá y papá.
+                            </li>
+                            <li class="flex items-center gap-2 text-slate-custom dark:text-gray-300">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                Tengo un Mastin Napolitano de 2 años
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vida escolar -->
+        <section class="py-24 bg-white dark:bg-background-dark" id="life">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                    <div class="lg:col-span-1">
+                        <h2 class="text-3xl font-black text-charcoal-custom dark:text-white mb-6 flex items-center gap-3">
+                            <span class="w-12 h-1 bg-primary rounded-full"></span>
+                            Mi vida escolar (Resumen)
+                        </h2>
+                        <p class="text-slate-custom dark:text-gray-400 font-medium">Mi vida escolar ha sido una etapa fundamental en mi crecimiento personal y profesional</p>
+                    </div>
+                    <div class="lg:col-span-2 space-y-6">
+                        <p class="text-xl text-slate-custom dark:text-gray-300 leading-relaxed">
+                            Desde pequeño aprendí la importancia de la disciplina y la constancia en los estudios. Siempre he buscado superarme y adquirir nuevos conocimientos que me ayuden a prepararme para el futuro.
+                        </p>
+                        <p class="text-lg text-slate-custom dark:text-gray-400 leading-relaxed">
+                            Con el paso de los años descubrí mi interés por el área tecnológica, lo que me llevó a elegir la carrera de Ingeniería Electrónica, una decisión que marcó un antes y un después en mi formación. Durante esta etapa he desarrollado habilidades como el análisis, la resolución de problemas y el pensamiento lógico.
+                        </p>
+                        <p class="text-lg text-slate-custom dark:text-gray-400 leading-relaxed">
+                            Además de lo académico, la escuela también me permitió fortalecer valores como la responsabilidad, el trabajo en equipo y la perseverancia. Cada nivel educativo representó un reto distinto, pero también una oportunidad para crecer y acercarme más a mis metas personales y profesionales.
+                        </p>
+                        <p class="text-lg text-slate-custom dark:text-gray-400 leading-relaxed">
+                            En general, considero que mi vida escolar ha sido una base sólida para el camino que estoy construyendo hoy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Bio Section -->
+        <section class="py-24 bg-background-light dark:bg-slate-900/50" id="bio">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                    <div class="lg:col-span-1">
+                        <h2 class="text-3xl font-black text-charcoal-custom dark:text-white mb-6 flex items-center gap-3">
+                            <span class="w-12 h-1 bg-primary rounded-full"></span>
+                            Autobiografía de Cristian Aguilar Sumano
+                        </h2>
+                        <p class="text-slate-custom dark:text-gray-400 font-medium">Mi nombre es Cristian Aguilar Sumano.</p>
+                    </div>
+                    <div class="lg:col-span-2 space-y-6">
+                        <p class="text-xl text-slate-custom dark:text-gray-300 leading-relaxed">
+                            Nací el 20 de octubre en Ocotlán de Morelos, Oaxaca, un lugar lleno de tradición, cultura y paisajes que marcaron mi forma de ser desde pequeño. Crecer en Oaxaca me enseñó a valorar la sencillez, la naturaleza y la importancia de la familia.
+                        </p>
+                        <p class="text-lg text-slate-custom dark:text-gray-400 leading-relaxed">
+                            Soy una persona de estatura alta, mido 1.80 metros y tengo un peso promedio. Más allá de lo físico, me considero alguien tranquilo, observador y perseverante. Disfruto mucho de las cosas simples de la vida: caminar sin prisa, contemplar el cielo, ver las nubes pasar y admirar los amaneceres y atardeceres. Me gusta reflexionar y encontrar inspiración en los pequeños detalles que muchas veces pasan desapercibidos.
+                        </p>
+                        <p class="text-lg text-slate-custom dark:text-gray-400 leading-relaxed">
+                            Mi familia es uno de los pilares más importantes en mi vida. Tengo un hermano que es apasionado de las motos; le encanta salir a rodar y vivir la aventura que ese deporte le ofrece. Compartimos esa energía por el movimiento y la emoción. Afortunadamente, cuento con mis dos padres, mamá y papá, quienes siguen siendo un gran apoyo y ejemplo para mí. Gracias a ellos aprendí valores como el esfuerzo, la constancia y la responsabilidad.
+                        </p>
+                        <p class="text-lg text-slate-custom dark:text-gray-400 leading-relaxed">
+                            En cuanto a mis hobbies, el deporte ocupa un lugar importante en mi vida. Me gusta mucho el básquetbol, practicar senderismo y salir a caminar o trotar. Disfruto mantenerme activo, sentir el aire fresco y conectar con la naturaleza. También me gusta salir a rodar, ya que me brinda una sensación de libertad y adrenalina que me motiva.
+                        </p>
+                        <p class="text-lg text-slate-custom dark:text-gray-400 leading-relaxed">
+                            Actualmente estudio Ingeniería Electrónica, una carrera que realmente disfruto. Me apasiona entender cómo funcionan las cosas, resolver problemas y crear soluciones tecnológicas. Para mí, la electrónica no es solo una carrera, sino una oportunidad para innovar y crecer profesionalmente.
+                        </p>
+                        <p class="text-lg text-slate-custom dark:text-gray-400 leading-relaxed">
+                            Además, tengo un fuerte interés por los negocios. Me encanta negociar y analizar oportunidades de inversión. He logrado construir e invertir en locales comerciales, y continúo trabajando en nuevos proyectos. Me motiva generar crecimiento y crear algo propio que pueda expandirse con el tiempo.
+                        </p>
+                        <p class="text-lg text-slate-custom dark:text-gray-400 leading-relaxed">
+                            En mi vida personal también hay alguien muy especial: Grace, mi perrita Mastín Napolitano de dos años. Es parte importante de mi día a día y me ha enseñado sobre lealtad y compañía incondicional.
+                        </p>
+                        <p class="text-lg text-slate-custom dark:text-gray-400 leading-relaxed">
+                            Entre mis gustos personales, disfruto mucho la pizza y también los juegos de azar, las apuestas y las barajas. Me atrae la emoción que generan y el análisis que implica tomar decisiones bajo presión; esa adrenalina hace que cada momento se vuelva más intenso.
+                        </p>
+                        <p class="text-lg text-slate-custom dark:text-gray-400 leading-relaxed">
+                            En resumen, soy una persona que combina la tranquilidad de apreciar la naturaleza con la energía de los negocios y la adrenalina de los retos. Valoro a mi familia, disfruto mi carrera y siempre busco crecer tanto personal como profesionalmente, manteniendo los pies en la tierra y la mirada en el futuro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="py-24 bg-white dark:bg-background-dark overflow-hidden" id="formacion">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-black text-charcoal-custom dark:text-white mb-16">Formación y Crecimiento Académico</h2>
+                <div class="relative">
+                    <!-- Vertical Line -->
+                    <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-px bg-slate-200 dark:bg-slate-800"></div>
+                    <div class="space-y-16">
+                        <!-- Experience 1 -->
+                        <div class="relative flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                                <h3 class="text-2xl font-bold text-charcoal-custom dark:text-white">Bases y Disciplina</h3>
+                                <p class="text-primary font-bold mb-2"> En Mi Formación</p>
+                                <p class="text-slate-custom dark:text-gray-400">Desde mis primeros años escolares aprendí la importancia de la responsabilidad y la constancia. Cada etapa académica fue construyendo en mí hábitos de estudio, disciplina y compromiso, que con el tiempo se volvieron parte fundamental de mi carácter.</p>
+                            </div>
+                            <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark z-10 shadow-lg shadow-primary/20"></div>
+                            <div class="md:w-1/2 md:pl-12">
+                                <span class="inline-block px-4 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-custom dark:text-gray-300 text-sm font-bold">Disciplina y Constancia</span>
+                            </div>
+                        </div>
+                        <!-- Experience 2 -->
+                        <div class="relative flex flex-col md:flex-row-reverse items-center">
+                            <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+                                <h3 class="text-2xl font-bold text-charcoal-custom dark:text-white">Descubrimiento</h3>
+                                <p class="text-primary font-bold mb-2">De Mi Vocación</p>
+                                <p class="text-slate-custom dark:text-gray-400">A lo largo de mi trayectoria académica descubrí mi interés por el área tecnológica. Esta inclinación me llevó a elegir la carrera de Ingeniería Electrónica, donde confirmé mi gusto por comprender cómo funcionan las cosas, analizar sistemas y resolver problemas técnicos.</p>
+                            </div>
+                            <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark z-10"></div>
+                            <div class="md:w-1/2 md:pr-12 md:text-right">
+                                <span class="inline-block px-4 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-custom dark:text-gray-300 text-sm font-bold">Vocación Tecnológica</span>
+                            </div>
+                        </div>
+                        <!-- Education -->
+                        <div class="relative flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                                <h3 class="text-2xl font-bold text-charcoal-custom dark:text-white">Preparación</h3>
+                                <p class="text-primary font-bold mb-2">Para el Futuro</p>
+                                <p class="text-slate-custom dark:text-gray-400">Mi etapa escolar no solo me brindó conocimientos técnicos, sino también habilidades personales como el pensamiento crítico, el trabajo en equipo y la perseverancia. Cada reto académico representó una oportunidad para crecer y prepararme para mis metas profesionales y personales.</p>
+                            </div>
+                            <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark z-10"></div>
+                            <div class="md:w-1/2 md:pl-12">
+                                <span class="inline-block px-4 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-custom dark:text-gray-300 text-sm font-bold">Crecimiento Profesional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- galeria -->
+<section class="py-24 bg-background-light dark:bg-slate-900/50" id="gallery">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-4xl font-black text-charcoal-custom dark:text-white mb-4">Galeria Personal</h2>
+<div class="w-20 h-1.5 bg-primary rounded-full mb-6"></div>
+<p class="text-slate-custom dark:text-gray-400 max-w-2xl">Bienvenido a mi galeria personal, donde situo todas mis fotos categorizadas por hobbies, gustos y mas.</p>
+</div>
+<div class="space-y-20">
+<!-- Group 1 -->
+
+<div>
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<h3 class="text-2xl font-bold text-charcoal-custom dark:text-white">Hobbies</h3>
+<p class="text-slate-custom dark:text-gray-400 mt-1">Disfruto mucho mi Carrera Ingeniería Electrónica pero también disfruto salir a rodar<br>
+Me gusta mucho negociar, me encantan los negocios, asi como tambien ya construi, invertir en locales comerciales y estoy haciendo aun mas.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Industrial automation line" src="https://lh3.googleusercontent.com/pw/AP1GczOdyRNRmKHl4nqipxVQHeSWAQpG_NWmHGKs1Vzlq7y8ptjCTmJCTiHpF_3rDulUxgnV9FrpIY_qnLBs0-XMK3pmj99aP6qXRt6o9C5oSSANXikB0w=w2400"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczM2mZuIE4VgC4sbl6V5FALyfarV-51A7o_Xw-wtqao8pTZ7v5y0DlqsIMThf4Lg_EA0PwiyNUlUbDDyWO0haTLD3M3PXZT1LEJsK4Fz16hg_Ja32Q=w2400"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczO4ENYgS7xenwK5Rlc5EB6h2vDxVqJd8p-2bd35QIANqLs0Q292KRJ1zMNXo1-yatwtFae3pf2cTTQPNTfQ8xls5WFfr4U54AD9_0EUxfCEl77luQ=w2400"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczOk6WT2Xskk65oGzxTxWukC5HBqooqKJ7KlbDmN82vjdC8vaCksnfTTCtNn3hc7Z-h6tv3dnpH1-YsSU-gYy7XlAeNWeKACNWc8IbuwTwDK8rEmTw=w2400"/>
+</div>
+</div>
+</div>
+
+<!-- Group 2 -->
+<div>
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<h3 class="text-2xl font-bold text-charcoal-custom dark:text-white">Mi Familia</h3>
+<p class="text-slate-custom dark:text-gray-400 mt-1">Tengo un hermano, que maneja Moto. Le encantan las motos, sale a rodar y le gusta mucho eseo deporte o aventura, tengo vivos a mis dos padres, mamá y papá.
+</p>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczMvSbP6KFxfz68frxBLq6YKSi7Ygza0bihUAkLJvrz71SkzAHtrca8JjXfeshGqXt2f57KQzq2h_Uz3PIhrCryrULb59UCBSEuLP0UubRQfPT15jA=w2400"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczNqTkIoyrht_OzFGl5AcCSGyt1VXdmZR_EAjfBmRAsj13-OaqRbcR1JWyUgF3E4Hkkcf_PZIfJIHXNgrn3_mZvvj9SBZ2SxCxBhBGs-00CgYTAbzg=w2400"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczM2mZuIE4VgC4sbl6V5FALyfarV-51A7o_Xw-wtqao8pTZ7v5y0DlqsIMThf4Lg_EA0PwiyNUlUbDDyWO0haTLD3M3PXZT1LEJsK4Fz16hg_Ja32Q=w2400"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczPQuB4L_RZnBDCX5DUddxqHBBfc49mb22zwufXqdolp1nqzhaL4VxZOkNCgjafcfu0NcIdhohVjsUvF7k1ba480NqLEUZLKBRp7ACzUkjA-V3Kn7g=w2400"/>
+</div>
+</div>
+</div>
+
+<div>
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<h3 class="text-2xl font-bold text-charcoal-custom dark:text-white">Lo que Me Gusta</h3>
+<p class="text-slate-custom dark:text-gray-400 mt-1">Me gusta el Basquet, el senderismo,  me gusta salir a caminar apreciar la naturaleza,  me considero alguien que disfruta mucho de lo simple, me encanta caminar, o salir a trotar, es algo que disfruto mucho.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczONl-6aMdDL-2pGtS1FwpKMOPb_7ASs34LNT5Mkd9RbRPug9Q-NrNXSlebIioGXCKN7ABluDQawxbECnGOvUPz4G7pNkKRjgVys4263U3lEps9QOw=w2400"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczNpEryZyU4ri7mjawO7m7lunF9AUi4pXx_Tw1tcVHT0IfC5-LN2R9tlpVCJe3S73jHWVvS0XxpLwyz49ino7cYKebH10uIQ_ihq4GIjLF5p33pePA=w2400"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczPHgCRHAGSKnXOBdZA9_YX50OSDZVSNW0F8yBc8akNcGUFpYQsgD7tmXGigpVERDrhVb18VbzDuKidszt5qy0AdZ7kF-efZUEhUPrsuOrBhosq1Wg=w2400"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczNJCy5YIXZP7k9LYSa8vpb7b0JNpSGfI3XS33JRzr8wCrFmCfOOj7Yv35_fWsUpDkUuKMbjezt65jnkhij8i_t9wOVSdrRxi2mlSMCugHPGtlC3vg=w2400"/>
+</div>
+</div>
+</div>
+
+<div>
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<h3 class="text-2xl font-bold text-charcoal-custom dark:text-white">Mas Sobre mi</h3>
+<p class="text-slate-custom dark:text-gray-400 mt-1">Tengo a Grace, Es una Mastin Napolitano tiene 2 años apenas<br>
+Me encanta la pizza.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Industrial automation line" src="https://lh3.googleusercontent.com/pw/AP1GczMSgvC044fYjNF842HMDlTWxUMjE3ebOxLUecWB-MFFx2KiWWZ_npGXUL824As17JGFyc-H7FtDI8p64B9lVsAAKwgt8dBc7visGFQxNacY1ZyBaA=w2400"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczOhDHIexkUK-Gdm47J0U8Pqb5jPVFxs-t3H4lwV5fQdD_CKSx5L2n4ml2vsXLerX4GhcRl2CfUmoAvcBIocjOwEPKs8Xzae8JSnksp6JBBRPkiDVg=w2400"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczMyWgrDg-uy23QXd6Y3bWhzdpT1PtU7sjeRIm8PCzLBY0q8RmhhGY4qKmh8t9PMBMmxDp3r6j9bK6R4hEKYEDDd0801lSw7JeaOZp_tyWtOnmT2cA=w2400"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Robotic arm detail" src="https://lh3.googleusercontent.com/pw/AP1GczM31brOMsqbgpVjF-7EVGiISLstiYGL79Aaii4Cgwbnt__wJwiGYtzVD4hrL-qupkVER63PIS0FmXOUh1MEe8_9luArtnH-eL3RY5shAkyNjKQrKg=w2400"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Videos -->
+<section class="py-24 bg-white dark:bg-background-dark" id="video-showcase">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-4xl font-black text-charcoal-custom dark:text-white mb-4">Videos de Musica</h2>
+<div class="w-20 h-1.5 bg-primary rounded-full mb-6"></div>
+<p class="text-slate-custom dark:text-gray-400 max-w-2xl">Para darle mejor aspecto al sitio se implemento este reproductor</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Video Item 1 -->
+<div class="group bg-slate-50 dark:bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm">
+<div class="aspect-video relative">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a5uQMwRMHcs?si=oArdjC__z4YTjkX9" title="YouTube video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-charcoal-custom dark:text-white mb-2">Instant Crush - Daft Punk</h3>
+<p class="text-slate-custom dark:text-gray-400 text-sm">Un video Musical de los que suelo escuchar de vez en cuando.</p>
+</div>
+</div>
+<!-- Video Item 2 -->
+<div class="group bg-slate-50 dark:bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm">
+<div class="aspect-video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FxzBvqY5PP0?si=ur2ceHcLHyqonjg2" title="YouTube video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-charcoal-custom dark:text-white mb-2">Digital Love - Daft Punk</h3>
+<p class="text-slate-custom dark:text-gray-400 text-sm">Esta va nomas por que es una joyita.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- reproductor de musica-->
+<section class="py-24 bg-background-light dark:bg-slate-900/50" id="musica">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm p-8">
+      <h2 class="text-2xl font-black text-charcoal-custom dark:text-white mb-4">Playlist en Spotify</h2>
+      <iframe 
+  style="border-radius:12px" 
+  src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF"
+  width="100%" 
+  height="450" 
+  frameborder="0" 
+  allowfullscreen 
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+    </div>
+  </div>
+</section>
+
+
+
+        <!-- Contact Section -->
+        <section class="py-24 bg-white dark:bg-background-dark" id="contact">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="bg-charcoal-custom dark:bg-slate-900 rounded-[2rem] p-12 lg:p-20 relative overflow-hidden shadow-2xl">
+                    <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/10 skew-x-12 transform translate-x-1/3 pointer-events-none"></div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 relative">
+                        <div>
+                            <h2 class="text-5xl font-black text-white mb-8">Construyamos el futuro...</h2>
+                            <p class="text-slate-400 text-lg mb-12">Me gusta mucho negociar, me encantan los negocios, así como también ya construí, invertir en locales comerciales y estoy haciendo aun mas.</p>
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-4 group">
+                                    <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                                        <span class="material-symbols-outlined">alternate_email</span>
+                                    </div>
+                                    <span class="text-white font-medium">22161537@itoaxaca.edu.mx</span>
+                                </div>
+                                <div class="flex items-center gap-4 group">
+                                    <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                                        <span class="material-symbols-outlined">distance</span>
+                                    </div>
+                                    <span class="text-white font-medium">Oaxaca de Juárez, Oaxaca, Mexico.</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 mt-12">
+                                <a class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center text-white hover:bg-primary transition-colors" href="#">
+                                    <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                                </a>
+                                <a class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center text-white hover:bg-primary transition-colors" href="#">
+                                    <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <input class="w-full bg-white/5 border-white/10 text-white rounded-xl px-4 py-4 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Nombre" type="text"/>
+                                <input class="w-full bg-white/5 border-white/10 text-white rounded-xl px-4 py-4 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Apellido" type="text"/>
+                            </div>
+                            <input class="w-full bg-white/5 border-white/10 text-white rounded-xl px-4 py-4 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Email" type="email"/>
+                            <textarea class="w-full bg-white/5 border-white/10 text-white rounded-xl px-4 py-4 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Mensaje" rows="5"></textarea>
+                            <button class="w-full py-4 bg-primary text-white font-bold rounded-xl hover:shadow-xl hover:shadow-primary/20 transition-all active:scale-95" type="submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="py-12 border-t border-slate-100 dark:border-slate-800">
+            <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-slate-custom dark:text-gray-400 text-sm">© 2024 Cristian Aguilar Sumano. Todos los derechos reservados.</p>
+                <div class="flex items-center gap-8">
+                    <a class="text-xs uppercase font-bold tracking-widest text-slate-custom hover:text-primary" href="#">LinkedIn</a>
+                    <a class="text-xs uppercase font-bold tracking-widest text-slate-custom hover:text-primary" href="#">GitHub</a>
+                    <a class="text-xs uppercase font-bold tracking-widest text-slate-custom hover:text-primary" href="#">CV</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body></html>
